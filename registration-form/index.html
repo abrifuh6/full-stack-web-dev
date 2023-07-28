@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h1>Race Registration!!</h1>
+    <form action="/buamtech">
+        <div>
+            <label for="first-name">First Name</label>
+            <input type="name" id="first-name" placeholder="Enter First Name">
+
+            <label for="last-name">Last Name</label>
+            <input type="name" id="last-name" placeholder="Enter Last Name">
+        </div>
+        <div>
+            <p>Select a Race:</p>
+            <input type="radio" id="fun-run">
+            <label for="fun-run">Fun Run 5K</label> <br>
+            <input type="radio" name="q" id="half-run">
+            <label for="half-run">Half Marathon</label><br>
+            <input type="radio" id="full-run">
+            <label for="full-run">Full Marathon</label><br>
+                                                       
+        </div>
+        <div><label for="email">Email</label>
+             <input type="email" id="email" placeholder="Enter Your Email">
+             <label for="password">Password</label>
+             <input type="password" id="password" placeholder="Enter your Password">
+        </div>
+       <label for="age">Select your Age Group</label>
+        <select name="age" id="age">
+        <option value=""></option>
+        <option value="under-age">under 18</option>
+        <option value="young-adults">age 18-25</option>
+        <option value="grown-adults">age 26-30</option>
+    </select>
+    <div>
+    <button>Register!</button>
+</div>
+    </form>
+</body>
+
+</html>

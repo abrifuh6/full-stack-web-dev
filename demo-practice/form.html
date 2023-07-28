@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Demo Form</h1>
+    <form action="/tacos">
+        <button type="button">PLease Do Not Submit The Form</button>
+        <p>
+            <label for="Username">Enter your username:</label>
+            <input id="Username" type="text" placeholder="Username" name="Username">
+        </p>
+        <p>
+            <label for="Email">Enter your Email:</label>
+            <input type="email" placeholder="Email" id="Email" name="Email">
+        </p>
+        <p>
+            <label for="Password">Enter your Password:</label>
+            <input type="password" placeholder="Password" id="Password" name="Password">
+        </p>
+        <p>
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date">
+        </p>
+        <button>Submit</button>
+
+        <!--Linking my "search" button on my form to hit different servers-->
+    </form>
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search Youtube</button>
+    </form>
+
+    <h2>Checkbox Inputs!!</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree" id="agree">
+        <label for="agree">Accept All Terms and Conditions</label>
+
+
+        <h3>Radio button demo</h3>
+        <p>
+            <label for="s">small</label>
+            <input type="radio" name="size" id="s" value="s">
+
+            <label for="m">medium</label>
+            <input type="radio" name="size" id="m" value="m">
+
+            <label for="m">large</label>
+            <input type="radio" name="size" id="l" value="l">
+
+        </p>
+        <p>
+            <label for="meal">Please select an Entree</label>
+           <select name="meal" id="meal">
+            <option value="select option"></option>
+            <option value="fish">Fish</option>
+            <option value="chicken">Chicken</option>
+            <option value="vegies">Vegiterian</option>
+            <option value="steak">Steak</option>
+           </select>
+
+        </p>
+
+        <p>
+            <label for="cheese"> Amount of Cheese:</label>
+            <input type="range" id="cheese" name="cheese_level" min="1" max="10">
+        </p>
+        <button>Submit</button>
+
+    </form>
+</body>
+
+</html>
